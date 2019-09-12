@@ -123,7 +123,10 @@
 // Remix the default form control sizing classes into new ones for easier
 // manipulation.
 
-.input-group-lg > .form-control:not(textarea),
+.input-group-lg > .form-control {
+  min-height: $input-height-lg;
+}
+
 .input-group-lg > .form-select {
   height: $input-height-lg;
 }
@@ -136,11 +139,13 @@
 .input-group-lg > .input-group-append > .btn {
   padding: $input-padding-y-lg $input-padding-x-lg;
   @include font-size($input-font-size-lg);
-  line-height: $input-line-height-lg;
   @include border-radius($input-border-radius-lg);
 }
 
-.input-group-sm > .form-control:not(textarea),
+.input-group-sm > .form-control {
+  min-height: $input-height-sm;
+}
+
 .input-group-sm > .form-select {
   height: $input-height-sm;
 }
@@ -153,7 +158,6 @@
 .input-group-sm > .input-group-append > .btn {
   padding: $input-padding-y-sm $input-padding-x-sm;
   @include font-size($input-font-size-sm);
-  line-height: $input-line-height-sm;
   @include border-radius($input-border-radius-sm);
 }
 
