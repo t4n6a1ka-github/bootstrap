@@ -134,7 +134,7 @@
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  flex: 0 0 auto; // For IE: https://github.com/twbs/bootstrap/issues/29396
+  flex-shrink: 0; // For IE: https://github.com/twbs/bootstrap/issues/29396
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
 }
 
