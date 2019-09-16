@@ -1,4 +1,4 @@
-name: En
+name: CI
 
 on: [push]
 
